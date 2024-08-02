@@ -1,30 +1,262 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Form Thu Thập Thông Tin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phiếu Rèn luyện Cá nhân - K72A4</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Form Thu Thập Thông Tin</h1>
-    <form id="infoForm">
-        <label for="studentId">Mã sinh viên:</label><br>
-        <input type="text" id="studentId" name="studentId"><br><br>
-        <label for="fullName">Họ và tên:</label><br>
-        <input type="text" id="fullName" name="fullName"><br><br>
-        <label for="dob">Ngày sinh:</label><br>
-        <input type="date" id="dob" name="dob"><br><br>
-        <input type="submit" value="Submit">
+    <header>
+        <h2>PHIẾU RÈN LUYỆN CÁ NHÂN - K72A4</h2>
+    </header>
+    <form id="studentForm">
+        <div class="student-info">
+            <div class="info-item" id="infoID">
+                <label for="studentId">Mã sinh viên:</label>
+                <input type="number" id="studentId" name="studentId" oninput="lookupStudent()">
+            </div>
+            <div class="info-item"id="infoName">
+                <label for="studentName">Họ và tên:</label>
+                <span id="studentName" name="studentName" class="info-output"></span>
+            </div>
+            <div class="info-item"id="infoDOB">
+                <label for="studentDOB">Ngày sinh:</label>
+                <span id="studentDOB" name="studentDOB" class="info-output"></span>
+            </div>
+        </div>
+
+        <table id="bangDG">
+            <thead>
+            <tr>
+                <th>STT</th>
+                <th>Nội dung đánh giá</th>
+                <th>Điểm quy định</th>
+                <th>Điểm đánh giá</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="section sectionI">
+                <td colspan="2"><strong>Phần I</strong></td>
+                <td class="tongdiem">20</td>
+                <td class="tongdiem"><span id="I">0</span></td>
+            </tr>
+            <tr class="subsection">
+                <td colspan="2">Nhóm a</td>
+                <td class="tongdiem">5</td>
+                <td class="tongdiem"><span id="Ia">0</span></td>
+            </tr>
+            <tr class="contentI">
+                <td>1</td>
+                <td>Nội dung 1</td>
+                <td>3</td>
+                <td><input type="number" class="diem-input" id="Ia1" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="contentI">
+                <td>2</td>
+                <td>Nội dung 2</td>
+                <td>2</td>
+                <td><input type="number" class="diem-input" id="Ia2" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="subsection">
+                <td colspan="2">Nhóm b</td>
+                <td class="tongdiem">4</td>
+                <td class="tongdiem"><span id="Ib">0</span></td>
+            </tr>
+            <tr class="contentI">
+                <td>1</td>
+                <td>Nội dung 1</td>
+                <td>1.5</td>
+                <td><input type="number" class="diem-input" id="Ib1" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="contentI">
+                <td>2</td>
+                <td>Nội dung 2</td>
+                <td>1.5</td>
+                <td><input type="number" class="diem-input" id="Ib2" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="contentI">
+                <td>3</td>
+                <td>Nội dung 3</td>
+                <td>0.5</td>
+                <td><input type="number" class="diem-input" id="Ib3" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="contentI">
+                <td>4</td>
+                <td>Nội dung 4</td>
+                <td>0.5</td>
+                <td><input type="number" class="diem-input" id="Ib4" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="subsection">
+                <td colspan="2">Nhóm c</td>
+                <td class="tongdiem">7</td>
+                <td class="tongdiem"><span id="Ic">0</span></td>
+            </tr>
+            <tr class="contentI">
+                <td>1</td>
+                <td>Nội dung 1</td>
+                <td>1</td>
+                <td><input type="number" class="diem-input" id="Ic1" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="contentI">
+                <td>2</td>
+                <td>Nội dung 2</td>
+                <td>1.5</td>
+                <td><input type="number" class="diem-input" id="Ic2" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="contentI">
+                <td>3</td>
+                <td>Nội dung 3</td>
+                <td>1</td>
+                <td><input type="number" class="diem-input" id="Ic3" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="contentI">
+                <td>4</td>
+                <td>Nội dung 4</td>
+                <td>0.5</td>
+                <td><input type="number" class="diem-input" id="Ic4" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="contentI">
+                <td>5</td>
+                <td>Nội dung 5</td>
+                <td>1</td>
+                <td><input type="number" class="diem-input" id="Ic5" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="contentI">
+                <td>6</td>
+                <td>Nội dung 6</td>
+                <td>1</td>
+                <td><input type="number" class="diem-input" id="Ic6" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="contentI">
+                <td>7</td>
+                <td>Nội dung 7</td>
+                <td>1</td>
+                <td><input type="number" class="diem-input" id="Ic7" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="subsection">
+                <td colspan="2">Nhóm d</td>
+                <td class="tongdiem">1.5</td>
+                <td class="tongdiem"><span id="Id">0</span></td>
+            </tr>
+            <tr class="contentI">
+                <td>1</td>
+                <td>Nội dung 1</td>
+                <td>1.5</td>
+                <td><input type="number" class="diem-input" id="Id1" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="subsection">
+                <td colspan="2">Nhóm đ</td>
+                <td class="tongdiem">2.5</td>
+                <td class="tongdiem"><span id="Ida">0</span></td>
+            </tr>
+            <tr class="contentI">
+                <td>1</td>
+                <td>Nội dung 1</td>
+                <td>1</td>
+                <td><input type="number" class="diem-input" id="Ida1" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="contentI">
+                <td>2</td>
+                <td>Nội dung 2</td>
+                <td>1.5</td>
+                <td><input type="number" class="diem-input" id="Ida2" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="contentI">
+                <td>3</td>
+                <td>Nội dung 3</td>
+                <td>2.5</td>
+                <td><input type="number" class="diem-input" id="Ida3" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="section sectionII">
+                <td colspan="2"><strong>Phần II</strong></td>
+                <td class="tongdiem">25</td>
+                <td class="tongdiem"><span id="II">0</span></td>
+            </tr>
+            <tr class="subsection">
+                <td colspan="2">Nhóm a</td>
+                <td class="tongdiem">15</td>
+                <td class="tongdiem"><span id="IIa">0</span></td>
+            </tr>
+            <tr class="contentII">
+                <td>1</td>
+                <td>Nội dung 1</td>
+                <td>5</td>
+                <td><input type="number" class="diem-input" id="IIa1" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="contentII">
+                <td>2</td>
+                <td>Nội dung 2</td>
+                <td>4</td>
+                <td><input type="number" class="diem-input" id="IIa2" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="contentII">
+                <td>3</td>
+                <td>Nội dung 3</td>
+                <td>3</td>
+                <td><input type="number" class="diem-input" id="IIa3" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="contentII">
+                <td>4</td>
+                <td>Nội dung 4</td>
+                <td>3</td>
+                <td><input type="number" class="diem-input" id="IIa4" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="contentII">
+                <td>5</td>
+                <td>Nội dung 5</td>
+                <td>0</td>
+                <td><input type="number" class="diem-input" id="IIa5" name="diem-dg[]" min="-25" max="0" step="5"></td>
+            </tr>
+            <tr class="contentII">
+                <td>6</td>
+                <td>Nội dung 6</td>
+                <td>0</td>
+                <td><input type="number" class="diem-input" id="IIa6" name="diem-dg[]" min="-25" max="0" step="5"></td>
+            </tr>
+            <tr class="subsection">
+                <td colspan="2">Nhóm b</td>
+                <td class="tongdiem">10</td>
+                <td class="tongdiem"><span id="IIb">0</span></td>
+            </tr>
+            <tr class="contentII">
+                <td>1</td>
+                <td>Nội dung 1</td>
+                <td>4</td>
+                <td><input type="number" class="diem-input" id="IIb1" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="contentII">
+                <td>2</td>
+                <td>Nội dung 2</td>
+                <td>3</td>
+                <td><input type="number" class="diem-input" id="IIb2" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="contentII">
+                <td>3</td>
+                <td>Nội dung 3</td>
+                <td>3</td>
+                <td><input type="number" class="diem-input" id="IIb3" name="diem-dg[]" min="0" step="0.5"></td>
+            </tr>
+            <tr class="total">
+                <td colspan="3"><strong>Tổng điểm</strong></td>
+                <td class="tongdiem" colspan="1"><span id="totalPoints">0</span></td>
+            </tr>
+            <tr class="total">
+                <td colspan="3"><strong>Điểm gốc</strong></td>
+                <td class="tongdiem" colspan="1"><span id="studentPoints"></span></td>
+            </tr>
+
+            </tbody>
+        </table>
+        <div class="submit-container">
+            <input type="submit" value="Gửi thông tin">
+        </div>
     </form>
 
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbw5MG2kL5qr6cLz0oJZ_2rzF9OGcebT7cpu3LhW4iO4-pPzPMa5pGydFiHnRQ9sl2tKYQ/exec';
-
-        const form = document.forms['infoForm'];
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert('Gửi thành công!'))
-                .catch(error => console.error('Lỗi!', error.message))
-        });
-    </script>
+    <script src="diem-input.js"></script>
+    <script src="students.js"></script>
+    <script src="collapsed.js"></script>
+    <script src="tinh-diem.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
