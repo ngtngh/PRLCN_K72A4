@@ -211,7 +211,7 @@ input[type="number"] {
         font-size: 14px;
     }
     body {
-        padding: 5px;
+        padding: 4px;
         font-size: 14px;
     }
     h2 {
@@ -226,6 +226,10 @@ input[type="number"] {
         padding: 5px 5px;
         margin-top: 5px;
         width: 180px;
+    }
+    .message {
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
     .activities-container {
         margin-left: 0px;
