@@ -211,7 +211,7 @@ input[type="number"] {
         font-size: 14px;
     }
     body {
-        padding: 4px 6px;
+        padding: 10px 5px;
         font-size: 14px;
     }
     h2 {
@@ -228,8 +228,8 @@ input[type="number"] {
         width: 180px;
     }
     .message {
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .activities-container {
         margin-left: 0px;
@@ -237,7 +237,7 @@ input[type="number"] {
     }
     #check_acts {
         font-weight: bold;
-        margin-top: 5px;
+        margin-top: 10px;
         margin-left: 0px;
     }                   
 }
