@@ -201,7 +201,7 @@ input[type="number"] {
         margin-bottom: 5px;
     }
     .info-item {
-        height: 20px;
+        height: 18px;
         margin-bottom: 5px;
     }
     #studentId {
@@ -223,7 +223,15 @@ input[type="number"] {
         padding: 5px 5px;
         margin-top: 5px;
         width: 180px;
-    }                           
+    }
+    .activities-container {
+        margin-left: 15px;
+        margin-right: 0px;
+    }
+    #check_acts {
+        font-weight: bold;
+        margin-left: 5px;
+    }                   
 }
 
 .hidden {
