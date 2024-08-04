@@ -211,7 +211,7 @@ input[type="number"] {
         font-size: 14px;
     }
     body {
-        padding: 4px;
+        padding: 4px 6px;
         font-size: 14px;
     }
     h2 {
@@ -237,6 +237,7 @@ input[type="number"] {
     }
     #check_acts {
         font-weight: bold;
+        margin-top: 5px;
         margin-left: 0px;
     }                   
 }
