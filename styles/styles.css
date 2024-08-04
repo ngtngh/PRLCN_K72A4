@@ -1,0 +1,217 @@
+.student-info {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.info-item {
+    height: 25px;
+    margin-bottom: 10px;
+    float: left;
+}
+#infoID {
+    width: 32%;
+}
+#infoName {
+    width: 40%;
+}
+#infoDOB {
+    width: 28%;
+}
+.info-item:hover {
+    cursor: default;
+}
+
+/* Đặt các label ở vị trí cố định */
+label {
+    display: inline-block;
+    text-align: right;
+}
+
+#studentId {
+    width: 100px;
+    height: 24px;
+    font-family: Segoe UI, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.info-output {
+    font-weight: bold;
+}
+
+body {
+  font-family: Segoe UI, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+}
+th, td {
+  border: 1px solid black;
+  text-align: left;
+  padding: 6px;
+}
+th {
+  background-color: #ffe599;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+th:first-child, td:first-child {
+  width: 3%; 
+}
+th:nth-child(3), td:nth-child(3) {
+  width: 9%;
+}
+th:nth-child(4), td:nth-child(4) {
+  width: 5%;
+}
+td:first-child, td:nth-child(3), td:nth-child(4) {
+  text-align: center;
+}
+td[colspan="2"] {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.section {
+    background-color: #fff2cc;
+}
+.subsection {
+    background-color: #cfe2f3;
+}
+.sectionI:hover, .sectionII:hover {
+  background-color: #e8dbb7;
+  cursor: pointer;
+}
+.collapsedI .contentI, .collapsedII .contentII{
+  display: none;
+}
+
+.tongdiem {
+    font-weight: bold;
+    text-align: center;
+}
+
+#studentPoints {
+    color: red;
+}
+
+.diem-input {
+  width: 80%;
+  height: 24px;
+  font-family: Segoe UI, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: center;
+}
+button {
+    background-color: #4eb952;
+    color: white;
+    font-family: Segoe UI, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 10px;
+    margin-top: 10px;
+/*    margin-bottom: 15px;*/
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 230px;
+}
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+button:not(:disabled):hover {
+    background-color: #45a249;
+}
+.message {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: green;
+}
+.error {
+    color: red;
+}
+
+.activities-container {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#check_acts {
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Sử dụng media query để thay đổi bố cục khi kích thước màn hình không đủ */
+@media only screen and (max-width: 815px) {
+    #infoID {
+        width: 100%;
+        float: none;
+    }
+    #infoName {
+        width: 58%;
+    }
+    #infoDOB {
+        width: 42%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #infoID, #infoName, #infoDOB {
+        width: 100%;
+        float: none;
+    }
+}
+@media only screen and (max-width: 450px) {
+    #studentId {
+        height: 18px;
+        font-size: 14px;
+    }
+    #studentName, #studentDOB, label, table, body {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .diem-input {
+        font-size: 14px;
+    }
+}
+
+.hidden {
+    display: none;
+}
