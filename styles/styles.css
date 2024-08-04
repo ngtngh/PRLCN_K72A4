@@ -205,7 +205,7 @@ input[type="number"] {
         margin-bottom: 5px;
     }
     #studentId {
-        height: 18px;
+        height: 16px;
         font-size: 14px;
     }
     #studentName, #studentDOB, label, table, body {
