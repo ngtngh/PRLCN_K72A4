@@ -210,6 +210,13 @@ input[type="number"] {
     .diem-input {
         font-size: 14px;
     }
+    button {
+        font-size: 14px;
+        font-weight: bold;
+        padding: 5px 5px;
+        margin-top: 5px;
+        width: 180px;
+    }                           
 }
 
 .hidden {
