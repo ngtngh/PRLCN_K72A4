@@ -202,10 +202,9 @@ input[type="number"] {
     }
     .info-item {
         height: 18px;
-        margin-bottom: 5px;
     }
     #studentId {
-        height: 14px;
+        height: 16px;
         font-size: 14px;
     }
     #studentName, #studentDOB, label, table, body {
@@ -225,7 +224,7 @@ input[type="number"] {
         width: 180px;
     }
     .activities-container {
-        margin-left: 5px;
+        margin-left: 0px;
         margin-right: 0px;
     }
     #check_acts {
