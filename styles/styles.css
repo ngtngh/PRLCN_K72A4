@@ -197,6 +197,13 @@ input[type="number"] {
     }
 }
 @media only screen and (max-width: 450px) {
+    .student-info {
+        margin-bottom: 5px;
+    }
+    .info-item {
+        height: 20px;
+        margin-bottom: 5px;
+    }
     #studentId {
         height: 18px;
         font-size: 14px;
