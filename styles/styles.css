@@ -207,7 +207,11 @@ input[type="number"] {
         height: 16px;
         font-size: 14px;
     }
-    #studentName, #studentDOB, label, table, body {
+    #studentName, #studentDOB, label, table {
+        font-size: 14px;
+    }
+    body {
+        padding: 5px;
         font-size: 14px;
     }
     h2 {
