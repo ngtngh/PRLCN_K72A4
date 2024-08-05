@@ -4,7 +4,7 @@
     flex-wrap: wrap;
 }
 .info-item {
-    height: 25px;
+    height: 20px;
     margin-bottom: 10px;
     float: left;
 }
@@ -67,6 +67,12 @@ th {
 
 h2 {
   margin-top: 5px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+h3 {
+  font-size: 20px;
+  margin-top: 0px;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -93,11 +99,11 @@ td[colspan="2"] {
 .subsection {
     background-color: #cfe2f3;
 }
-.sectionI:hover, .sectionII:hover {
+.section:hover {
   background-color: #e8dbb7;
   cursor: pointer;
 }
-.collapsedI .contentI, .collapsedII .contentII{
+.collapsedI .contentI, .collapsedII .contentII, .collapsedIII .contentIII, .collapsedIV .contentIV, .collapsedV .contentV {
   display: none;
 }
 
@@ -117,6 +123,9 @@ td[colspan="2"] {
   text-align: center;
   border: 1px solid #999;
   border-radius: 4px;
+}
+#IIa5, #IIa6 {
+    background-color: #eee;
 }
 
 .submit-container {
@@ -202,7 +211,7 @@ input[type="number"] {
         margin-bottom: 5px;
     }
     .info-item {
-        height: 18px;
+        height: 16px;
     }
     #studentId {
         height: 16px;
@@ -217,6 +226,10 @@ input[type="number"] {
     }
     h2 {
         font-size: 20px;
+    }
+    h3 {
+      font-size: 16px;
+      margin-bottom: 15px;
     }
     .diem-input {
         height: 18px;

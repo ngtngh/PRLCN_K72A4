@@ -47,8 +47,10 @@ function handleDisplayChange(input) {
     ids.forEach(function(id) {
         if (input.id === id && input.value !== "") {
             ids.filter(i => i !== id).forEach(i => document.getElementById(i).style.display = 'none');
+            ids.filter(i => i !== id).forEach(i => document.getElementById(i).required = false);
         } else if (input.id === id && input.value === "") {
             ids.filter(i => i !== id).forEach(i => document.getElementById(i).style.display = 'inline-block');
+            ids.filter(i => i !== id).forEach(i => document.getElementById(i).required = true);
         }
     });
 }
