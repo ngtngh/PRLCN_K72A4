@@ -17,9 +17,6 @@
 #infoDOB {
     width: 28%;
 }
-.info-item:hover {
-    cursor: default;
-}
 
 /* Đặt các label ở vị trí cố định */
 label {
@@ -46,6 +43,7 @@ body {
   font-size: 18px;
   margin: 0;
   padding: 20px;
+  cursor: default;
 }
 
 table {
@@ -182,7 +180,6 @@ footer {
   text-align: center;
   font-size: 16px;
   color: lightgray;
-  cursor: default;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
