@@ -178,6 +178,12 @@ button:not(:disabled):hover {
     margin-right: 30px;
 }
 
+footer {
+  text-align: center;
+  font-size: 16px;
+  color: lightgray;
+}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -259,6 +265,9 @@ input[type="number"] {
         margin-bottom: 0px;
         margin-left: 0px;
         margin-right: 0px;
+    }
+    footer {
+      font-size: 12px;
     }             
 }
 
