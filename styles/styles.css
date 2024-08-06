@@ -182,6 +182,7 @@ footer {
   text-align: center;
   font-size: 16px;
   color: lightgray;
+  cursor: default;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -267,7 +268,7 @@ input[type="number"] {
         margin-right: 0px;
     }
     footer {
-      font-size: 12px;
+      font-size: 11px;
     }             
 }
 
