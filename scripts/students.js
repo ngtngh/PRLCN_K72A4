@@ -1,5 +1,5 @@
 const students = {
-    "001": { "stt": "01", "name": "Nguyen Van A", "dob": "01/01/2000", "points": "3", "hd": "- Hoạt động một\n- Hoạt động \"hai\"" },
+    "001": { "stt": "01", "name": "Nguyen Van A", "dob": "01/01/2000", "points": "0", "hd": "- Hoạt động một\n- Hoạt động \"hai\"" },
     "002": { "stt": "02", "name": "Tran Thi B", "dob": "02/02/2001", "points": "10", "hd": "- Hoạt động một\n- Hoạt động \"hai\"" },
     "003": { "stt": "03", "name": "Le Van C", "dob": "03/03/2002", "points": "10", "hd": "- Hoạt động một\n- Hoạt động \"hai\"\n- Hoạt động ba" },
     "725101187": { "stt": "1", "name": "Trần Thị Phương Linh", "dob": "16/02/2004", "points": "84.5", "hd": "1. Tham gia NVSP cấp khoa (Đội 4 - Thi giảng - Giải ba)\n2. Tham gia tích cực NVSP cấp lớp (10 điểm)\n3. Tham gia cuộc thi Tìm hiểu pháp luật trực tuyến - Tìm hiểu Luật Giáo dục\n4. Tham gia cuộc thi \"Tìm hiểu Pháp luật về Định danh điện tử và Dịch vụ công trực tuyến\"\n5. Tham gia sự kiện Ngày thẻ Việt Nam \n6. Đạt giấy khen Sinh viên Giỏi \n7. Điền phiếu đánh giá giảng viên" },
