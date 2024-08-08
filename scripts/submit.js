@@ -17,6 +17,10 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+function isSafari() {
+    return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+}
+
 form.addEventListener('submit', async e => {
     e.preventDefault();
 
@@ -225,10 +229,20 @@ form.addEventListener('submit', async e => {
         const link = document.createElement('a');
         link.href = 'data:application/pdf;base64,' + base64PDF;
         link.download = `${number}. ${studentName}.pdf`;
-        link.click();
 
-        messageDiv.textContent = 'Đã xong! Tải xuống tệp PDF và bạn có thể đóng trang này.';
-
+        if (isSafari()) {
+            messageDiv.textContent = 'Đã xong! Nếu file PDF không tự động tải xuống, vui lòng nhấn vào đây.';
+            const safariLink = document.createElement('a');
+            safariLink.href = link.href;
+            safariLink.textContent = 'Tải PDF';
+            safariLink.style.color = 'blue';
+            safariLink.style.cursor = 'pointer';
+            messageDiv.appendChild(document.createElement('br'));
+            messageDiv.appendChild(safariLink);
+        } else {
+            link.click();
+            messageDiv.textContent = 'Đã xong! Tải xuống tệp PDF và bạn có thể đóng trang này.';
+        }
     } catch (error) {
         messageDiv.textContent = 'Lỗi khi lưu thông tin! Báo cáo CBL để kiểm tra.';
         messageDiv.classList.add('error');
