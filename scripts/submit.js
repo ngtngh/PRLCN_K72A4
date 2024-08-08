@@ -220,38 +220,18 @@ form.addEventListener('submit', async e => {
     try {
         const response = await fetch(scriptURL, { method: 'POST', body: formData });
         const base64PDF = await response.text();
-        
-        // Chuyển đổi base64 thành Blob và tạo link Blob URL
-        const byteCharacters = atob(base64PDF);
-        const byteNumbers = new Array(byteCharacters.length);
-        for (let i = 0; i < byteCharacters.length; i++) {
-            byteNumbers[i] = byteCharacters.charCodeAt(i);
-        }
-        const byteArray = new Uint8Array(byteNumbers);
-        const blob = new Blob([byteArray], { type: 'application/pdf' });
-        const blobUrl = URL.createObjectURL(blob);
 
-        // Mở tệp PDF trong một tab mới (cách khắc phục cho iOS)
-        const newWindow = window.open(blobUrl, '_blank');
-        if (newWindow) {
-            newWindow.focus();
-        } else {
-            // Nếu không thể mở tab mới, sử dụng cách tải xuống
-            const link = document.createElement('a');
-            link.href = blobUrl;
-            link.download = `${number}. ${studentName}.pdf`;
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        }
-        URL.revokeObjectURL(blobUrl);
+        // Tạo link tải xuống
+        const link = document.createElement('a');
+        link.href = 'data:application/pdf;base64,' + base64PDF;
+        link.download = `${number}. ${studentName}.pdf`;
+        link.click();
 
         messageDiv.textContent = 'Đã xong! Tải xuống tệp PDF và bạn có thể đóng trang này.';
 
     } catch (error) {
         messageDiv.textContent = 'Lỗi khi lưu thông tin! Báo cáo CBL để kiểm tra.';
         messageDiv.classList.add('error');
-        submitButton.style.display = 'block';
     }
 });
 
