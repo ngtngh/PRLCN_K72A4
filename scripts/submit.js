@@ -225,21 +225,32 @@ form.addEventListener('submit', async e => {
         const response = await fetch(scriptURL, { method: 'POST', body: formData });
         const base64PDF = await response.text();
 
-        // Tạo link tải xuống
-        const link = document.createElement('a');
-        link.href = 'data:application/pdf;base64,' + base64PDF;
-        link.download = `${number}. ${studentName}.pdf`;
+        // Chuyển đổi Base64 sang Blob
+        const byteCharacters = atob(base64PDF);
+        const byteNumbers = new Array(byteCharacters.length);
+        for (let i = 0; i < byteCharacters.length; i++) {
+            byteNumbers[i] = byteCharacters.charCodeAt(i);
+        }
+        const byteArray = new Uint8Array(byteNumbers);
+        const blob = new Blob([byteArray], { type: 'application/pdf' });
+
+        // Tạo URL từ Blob
+        const blobURL = URL.createObjectURL(blob);
 
         if (isSafari()) {
-            messageDiv.textContent = 'Đã xong! Nếu file PDF không tự động tải xuống, vui lòng nhấn vào đây.';
+            messageDiv.textContent = 'Đã xong! Nếu tệp PDF không tự động tải xuống, vui lòng nhấn tải dưới đây.';
             const safariLink = document.createElement('a');
-            safariLink.href = link.href;
+            safariLink.href = blobURL;
             safariLink.textContent = 'Tải PDF';
             safariLink.style.color = 'blue';
             safariLink.style.cursor = 'pointer';
+            safariLink.download = `${number}. ${studentName}.pdf`; // Đảm bảo rằng tên file được đặt đúng
             messageDiv.appendChild(document.createElement('br'));
             messageDiv.appendChild(safariLink);
         } else {
+            const link = document.createElement('a');
+            link.href = blobURL;
+            link.download = `${number}. ${studentName}.pdf`;
             link.click();
             messageDiv.textContent = 'Đã xong! Tải xuống tệp PDF và bạn có thể đóng trang này.';
         }
