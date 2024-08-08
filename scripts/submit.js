@@ -231,13 +231,19 @@ form.addEventListener('submit', async e => {
         const blob = new Blob([byteArray], { type: 'application/pdf' });
         const blobUrl = URL.createObjectURL(blob);
 
-        // Tạo link tải xuống với tên tệp PDF theo họ và tên
-        const link = document.createElement('a');
-        link.href = blobUrl;
-        link.download = `${number}. ${studentName}.pdf`; // Đặt tên tệp theo họ và tên
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+        // Mở tệp PDF trong một tab mới (cách khắc phục cho iOS)
+        const newWindow = window.open(blobUrl, '_blank');
+        if (newWindow) {
+            newWindow.focus();
+        } else {
+            // Nếu không thể mở tab mới, sử dụng cách tải xuống
+            const link = document.createElement('a');
+            link.href = blobUrl;
+            link.download = `${number}. ${studentName}.pdf`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
         URL.revokeObjectURL(blobUrl);
 
         messageDiv.textContent = 'Đã xong! Tải xuống tệp PDF và bạn có thể đóng trang này.';
