@@ -3,19 +3,19 @@ const form = document.getElementById('studentForm');
 const messageDiv = document.getElementById('message');
 const submitButton = document.getElementById('submitButton');
 
-document.addEventListener("DOMContentLoaded", function() {
-    var diemInputs = document.querySelectorAll('.diem-input');
-    function checkTotalPoints() {
-        if (document.getElementById('totalPoints').innerText === document.getElementById('studentPoints').innerText) {
-            submitButton.disabled = false;
-        } else {
-            submitButton.disabled = true;
-        }   
-    }
-    diemInputs.forEach(function(input) {
-        input.addEventListener('blur', checkTotalPoints);
-    });
-});
+// document.addEventListener("DOMContentLoaded", function() {
+//     var diemInputs = document.querySelectorAll('.diem-input');
+//     function checkTotalPoints() {
+//         if (document.getElementById('totalPoints').innerText === document.getElementById('studentPoints').innerText) {
+//             submitButton.disabled = false;
+//         } else {
+//             submitButton.disabled = true;
+//         }   
+//     }
+//     diemInputs.forEach(function(input) {
+//         input.addEventListener('blur', checkTotalPoints);
+//     });
+// });
 
 function isSafari() {
     return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
