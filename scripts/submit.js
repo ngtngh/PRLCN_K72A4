@@ -3,19 +3,19 @@ const form = document.getElementById('studentForm');
 const messageDiv = document.getElementById('message');
 const submitButton = document.getElementById('submitButton');
 
-// document.addEventListener("DOMContentLoaded", function() {
-//     var diemInputs = document.querySelectorAll('.diem-input');
-//     function checkTotalPoints() {
-//         if (document.getElementById('totalPoints').innerText === document.getElementById('studentPoints').innerText) {
-//             submitButton.disabled = false;
-//         } else {
-//             submitButton.disabled = true;
-//         }   
-//     }
-//     diemInputs.forEach(function(input) {
-//         input.addEventListener('blur', checkTotalPoints);
-//     });
-// });
+document.addEventListener("DOMContentLoaded", function() {
+    var diemInputs = document.querySelectorAll('.diem-input');
+    function checkTotalPoints() {
+        if (document.getElementById('totalPoints').innerText === document.getElementById('studentPoints').innerText) {
+            submitButton.disabled = false;
+        } else {
+            submitButton.disabled = true;
+        }   
+    }
+    diemInputs.forEach(function(input) {
+        input.addEventListener('blur', checkTotalPoints);
+    });
+});
 
 function isSafari() {
     return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
@@ -238,10 +238,10 @@ form.addEventListener('submit', async e => {
         const blobURL = URL.createObjectURL(blob);
 
         if (isSafari()) {
-            messageDiv.textContent = 'Đã xong! Nếu tệp PDF không tự động tải xuống, vui lòng nhấn tải dưới đây.';
+            messageDiv.textContent = 'Đã xong! Nếu trình duyệt Safari không tự động tải tệp xuống, vui lòng xem tệp và tải về tại đây.';
             const safariLink = document.createElement('a');
             safariLink.href = blobURL;
-            safariLink.textContent = 'Tải PDF';
+            safariLink.textContent = 'Xem phiếu đã tạo';
             safariLink.style.color = 'blue';
             safariLink.style.cursor = 'pointer';
             safariLink.download = `${number}. ${studentName}.pdf`; // Đảm bảo rằng tên file được đặt đúng
