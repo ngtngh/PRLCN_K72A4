@@ -114,7 +114,7 @@ td[colspan="2"] {
 }
 
 .diem-input {
-  width: 80%;
+  width: 70%;
   height: 24px;
   font-family: Segoe UI, sans-serif;
   font-size: 18px;
@@ -181,6 +181,7 @@ footer {
   text-align: center;
   font-size: 16px;
   color: lightgray;
+  
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -272,4 +273,26 @@ input[type="number"] {
 
 .hidden {
     display: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8; 
 }
