@@ -27,6 +27,7 @@ label {
 #studentId {
     width: 100px;
     height: 24px;
+    line-height: 24px;
     font-family: Segoe UI, sans-serif;
     font-size: 18px;
     text-align: center;
@@ -116,6 +117,7 @@ td[colspan="2"] {
 .diem-input {
   width: 70%;
   height: 24px;
+  line-height: 24px;
   font-family: Segoe UI, sans-serif;
   font-size: 18px;
   text-align: center;
@@ -220,7 +222,8 @@ input[type="number"] {
         height: 16px;
     }
     #studentId {
-        height: 16px;
+        height: 18px;
+        line-height: 18px;
         font-size: 14px;
     }
     #studentName, #studentDOB, label, table {
@@ -239,6 +242,7 @@ input[type="number"] {
     }
     .diem-input {
         height: 18px;
+        line-height: 18px;
         font-size: 14px;
     }
     button {
