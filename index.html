@@ -28,22 +28,35 @@
             </div>
         </div>
 
+        <div class="sticky-top">
+            <div class="top-margin"></div>
+            <table id="tenCot">
+                <thead>
+                <tr>
+                    <th>TT</th>
+                    <th>Nội dung đánh giá</th>
+                    <th>Điểm quy định</th>
+                    <th>Điểm đánh giá</th>
+                </tr>
+                </thead>
+            </table>
+        </div>
         <table id="bangDG">
-            <thead>
+            <!-- <thead>
             <tr>
                 <th>TT</th>
                 <th>Nội dung đánh giá</th>
                 <th>Điểm quy định</th>
                 <th>Điểm đánh giá</th>
             </tr>
-            </thead>
+            </thead> -->
             <tbody>
 
             <!-- Phần I -->
             <tr class="section sectionI">
-                <td colspan="2"><strong>I. Đánh giá về ý thức học tập</strong></td>
-                <td class="tongdiem">20</td>
-                <td class="tongdiem"><span id="I">0</span></td>
+                <td colspan="2" style="border-top: none;"><strong>I. Đánh giá về ý thức học tập</strong></td>
+                <td class="tongdiem" style="border-top: none;">20</td>
+                <td class="tongdiem" style="border-top: none;"><span id="I">0</span></td>
             </tr>
             <tr class="subsection">
                 <td colspan="2"><strong>a)</strong> Ý thức và thái độ trong học tập</td>
@@ -498,31 +511,35 @@
                 <td class="tongdiem"><span id="Vd">0</span></td>
             </tr>
             <tr class="contentV">
-                <td>1</td>
-                <td>Được biểu dương, khen thưởng vì có thành tích đặc biệt trong học tập, rèn luyện (được tặng bằng khen, giấy khen, chứng nhận, thư khen của các cấp)</td>
-                <td>1</td>
-                <td><input type="number" class="diem-input" id="Vd1" name="diem-dg[]" min="0" step="0.5" required></td>
+                <td style="border-bottom: none;">1</td>
+                <td style="border-bottom: none;">Được biểu dương, khen thưởng vì có thành tích đặc biệt trong học tập, rèn luyện (được tặng bằng khen, giấy khen, chứng nhận, thư khen của các cấp)</td>
+                <td style="border-bottom: none;">1</td>
+                <td style="border-bottom: none;"><input type="number" class="diem-input" id="Vd1" name="diem-dg[]" min="0" step="0.5" required></td>
             </tr>
-            
-            <!-- Tổng điểm -->
-            <tr class="total">
-                <td colspan="3"><strong>Tổng điểm</strong></td>
-                <td class="tongdiem" colspan="1"><span id="totalPoints">0</span></td>
-            </tr>
-            <tr class="total">
-                <td colspan="3"><strong>Điểm gốc</strong></td>
-                <td class="tongdiem" colspan="1"><span id="studentPoints"></span></td>
-            </tr>
-
             </tbody>
         </table>
-
-        <div class="submit-container">
-            <button type="submit" id="submitButton" disabled>Lưu thông tin và in phiếu</button>
-            <div class="message" id="message"></div>
-        </div> 
+        <div class="sticky-bottom">
+            <table id="bangDiem">
+                <!-- Tổng điểm -->
+                <tr class="total">
+                    <td style="width:91%"><strong>Tổng điểm</strong></td>
+                    <td class="tongdiem"><span id="totalPoints">0</span></td>
+                </tr>
+                <tr class="total">
+                    <td style="width:91%"><strong>Điểm gốc</strong></td>
+                    <td class="tongdiem"><span id="studentPoints"></span></td>
+                </tr>
+            </table>
+            <div class="bottom-margin"></div>
+        </div>
+        
     </form>
     
+    <div class="submit-container">
+        <button type="submit" id="submitButton" form="studentForm" disabled>Lưu thông tin và in phiếu</button>
+        <div class="message" id="message"></div>
+    </div> 
+
     <div id="check_acts"></div>
     <div class="activities-container">
         <span class="hidden" id="number"></span>
