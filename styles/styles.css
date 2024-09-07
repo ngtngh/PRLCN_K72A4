@@ -1,5 +1,4 @@
 .student-info {
-    margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -50,8 +49,8 @@ body {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 10px;
-  margin-bottom: 10px;
+/*  margin-top: 10px;
+  margin-bottom: 10px;*/
   border: 2px solid black;
 }
 th, td {
@@ -76,13 +75,13 @@ h3 {
   text-align: center;
 }
 th:first-child, td:first-child {
-  width: 3%; 
+  width: 3.8%; 
 }
 th:nth-child(3), td:nth-child(3) {
   width: 9%;
 }
 th:nth-child(4), td:nth-child(4) {
-  width: 5%;
+  width: 9%;
 }
 td:first-child, td:nth-child(3), td:nth-child(4) {
   text-align: center;
@@ -114,6 +113,40 @@ td[colspan="2"] {
     color: red;
 }
 
+#tenCot {
+    border-bottom: none;
+}
+#bangDG {
+    border-top: none;
+    border-bottom: none;
+}
+#bangDiem {
+    border-top: none;
+}
+
+div.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+/*    z-index: 1;*/
+}
+
+div.sticky-bottom {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+.top-margin {
+    height: 20px;
+/*    border-bottom: 2px solid black;*/
+}
+.bottom-margin {
+    height: 20px;
+}
+
 .diem-input {
   width: 70%;
   height: 24px;
@@ -128,9 +161,10 @@ td[colspan="2"] {
     background-color: #eee;
 }
 
-.submit-container {
+div.submit-container {
     display: flex;
     justify-content: center;
+/*    z-index: 1;*/
 }
 button {
     background-color: #4eb952;
@@ -253,6 +287,13 @@ input[type="number"] {
         margin-bottom: 5px;
         width: 180px;
     }
+    .top-margin {
+        height: 15px;
+    }
+    .bottom-margin {
+        height: 15px;
+    }
+
     .message {
         padding-top: 0px;
         padding-bottom: 0px;
