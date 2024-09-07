@@ -4,6 +4,7 @@
 }
 .info-item {
     height: 20px;
+    margin-top: 5px;
     margin-bottom: 10px;
     float: left;
 }
@@ -45,6 +46,17 @@ body {
   padding: 20px;
   cursor: default;
 }
+h2 {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+h3 {
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
 table {
   width: 100%;
@@ -63,25 +75,14 @@ th {
   text-align: center;
 }
 
-h2 {
-  margin-top: 5px;
-  margin-bottom: 0px;
-  text-align: center;
-}
-h3 {
-  font-size: 20px;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  text-align: center;
-}
 th:first-child, td:first-child {
-  width: 3.8%; 
+  width: 25px; 
 }
 th:nth-child(3), td:nth-child(3) {
-  width: 9%;
+  width: 130px;
 }
 th:nth-child(4), td:nth-child(4) {
-  width: 9%;
+  width: 130px;
 }
 td:first-child, td:nth-child(3), td:nth-child(4) {
   text-align: center;
@@ -109,6 +110,7 @@ td[colspan="2"] {
     font-weight: bold;
     text-align: center;
 }
+
 #studentPoints {
     color: red;
 }
@@ -202,7 +204,7 @@ button:not(:disabled):hover {
 
 #check_acts {
     font-weight: 600;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-left: 10px;
 }
 .activities-container {
@@ -229,6 +231,29 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+@media only screen and (max-width: 1200px) {
+    th:first-child, td:first-child {
+      width: 25px; 
+    }
+    th:nth-child(3), td:nth-child(3) {
+      width: 80px;
+    }
+    th:nth-child(4), td:nth-child(4) {
+      width: 80px;
+    }
+}
+@media only screen and (max-width: 860px) {
+    th:first-child, td:first-child {
+      width: 20px; 
+    }
+    th:nth-child(3), td:nth-child(3) {
+      width: 60px;
+    }
+    th:nth-child(4), td:nth-child(4) {
+      width: 60px;
+    }
+}
+
 /* Sử dụng media query để thay đổi bố cục khi kích thước màn hình không đủ */
 @media only screen and (max-width: 815px) {
     #infoID {
@@ -241,18 +266,111 @@ input[type="number"] {
     #infoDOB {
         width: 42%;
     }
+    h3 {
+        margin-bottom: 15px;
+    }
+    .info-item {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    #check_acts {
+        margin-left: 0px;
+    } 
+    .activities-container {
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
+
 @media only screen and (max-width: 600px) {
-    #infoID, #infoName, #infoDOB {
+    #infoID {
         width: 100%;
         float: none;
     }
+    #infoName {
+        width: 58%;
+    }
+    #infoDOB {
+        width: 42%;
+    }
+    .info-item {
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    #studentId {
+        height: 20px;
+        line-height: 20px;
+        font-size: 16px;
+    }
+    body {
+        padding: 15px;
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    th, td {
+      padding: 3px;
+    }
+    th:first-child, td:first-child {
+      width: 20px; 
+    }
+    th:nth-child(3), td:nth-child(3) {
+      width: 50px;
+    }
+    th:nth-child(4), td:nth-child(4) {
+      width: 50px;
+    }
+    .diem-input {
+        height: 20px;
+        line-height: 20px;
+        font-size: 16px;
+    }
+    button {
+        font-size: 16px;
+        padding: 5px 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 210px;
+    }
+    .top-margin {
+        height: 15px;
+    }
+    .bottom-margin {
+        height: 15px;
+    }
+    .message {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #check_acts {
+        margin-top: 10px;
+        margin-left: 0px;
+    } 
+    .activities-container {
+        margin-top: 5px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    footer {
+      font-size: 14px;
+    }
 }
+
 @media only screen and (max-width: 450px) {
     .student-info {
         margin-bottom: 5px;
     }
     .info-item {
+        margin-top: 8px;
+        margin-bottom: 2px;
         height: 16px;
     }
     #studentId {
@@ -272,8 +390,19 @@ input[type="number"] {
     }
     h3 {
       font-size: 16px;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
+
+    th:first-child, td:first-child {
+      width: 20px; 
+    }
+    th:nth-child(3), td:nth-child(3) {
+      width: 50px;
+    }
+    th:nth-child(4), td:nth-child(4) {
+      width: 50px;
+    }
+
     .diem-input {
         height: 18px;
         line-height: 18px;
@@ -302,11 +431,11 @@ input[type="number"] {
     }
     #check_acts {
         font-weight: bold;
-        margin-top: 5px;
+        margin-top: 10px;
         margin-left: 0px;
     } 
     .activities-container {
-        margin-top: 0px;
+        margin-top: 5px;
         margin-bottom: 0px;
         margin-left: 0px;
         margin-right: 0px;
