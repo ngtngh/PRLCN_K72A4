@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
             var diem = parseFloat(input.value);
             handleInputChange(input, diem, diemQuyDinh);
             handleDisplayChange(input);
+            input.value = input.value.replace(',', '.');
         });
 
         input.addEventListener('blur', function() {
