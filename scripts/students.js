@@ -36,11 +36,11 @@ const students = {
     "725101220": { "stt": "32", "name": "Vũ Nguyễn Bảo Minh", "dob": "26/08/2004", "points": "81.5", "hd": "1. Đánh giá giảng viên" },
     "725101221": { "stt": "33", "name": "Hoàng Thị Trà My", "dob": "28/02/2004", "points": "84", "hd": "1. Kiểm tra, đánh giá việc học tập lý luận chính trị trên App Thanh niên Việt Nam\n2. Đánh giá giảng viên" },
     "725101223": { "stt": "34", "name": "Đỗ Hải Nam", "dob": "01/01/2003", "points": "83.5", "hd": "1. Đánh giá giảng viên\n2. Kiểm tra, đánh giá việc học tập lý luận chính trị trên App Thanh niên Việt Nam" },
-    "725101224": { "stt": "35", "name": "Hoàng Hải Nam", "dob": "27/07/2004", "points": "95.5", "hd": "1. Tham gia seminar các GS ĐH Hasselt (Bỉ), chiều ngày 28/05/2024\n2. Tham dự Đại hội đại biểu Liên chi Đoàn khoa Toán - Tin, nhiệm kỳ 2024 - 2027\n3. Tham gia Ngày hội việc làm\n4. Điền phiếu Khảo sát lấy ý kiến về phiếu rèn luyện\n5. GPA kì II đạt Xuất sắc\n6. Ngày hội HSSV các dân tộc Việt Nam\n7. Tham gia cuộc thi Rung chuông vàng: Ánh sáng soi đường - Tiếp bước ba sẵn sàng\n8. Quyên góp sách Thư viện \n9. Đánh giá giảng viên \n10. Tham gia Hội thao \"Thanh niên khỏe\" khoa Toán - Tin\n11. Tham gia cuộc thi Tìm hiểu về Đoàn Thanh niên Cộng sản Hồ Chí Minh\n12. Tham gia tọa đàm NCKH đối với sinh viên khoa Toán - Tin\n13. Kiểm tra, đánh giá kết quả học tập Nghị quyết Đại hội đại biểu Toàn quốc Hội Sinh viên Việt Nam lần thứ XI, nhiệm kỳ 2023 - 2028 (44 điểm)\n14. Cổ vũ HNUE ENLISH\n15. Kiểm tra, đánh giá việc học tập lý luận chính trị trên App Thanh niên Việt Nam\n16. Dạy học tình nguyện mùa hè xanh\n17. Hiến máu tình nguyện 2 lần " },
+    "725101224": { "stt": "35", "name": "Hoàng Hải Nam", "dob": "27/07/2004", "points": "95", "hd": "1. Tham gia seminar các GS ĐH Hasselt (Bỉ), chiều ngày 28/05/2024\n2. Tham dự Đại hội đại biểu Liên chi Đoàn khoa Toán - Tin, nhiệm kỳ 2024 - 2027\n3. Tham gia Ngày hội việc làm\n4. Điền phiếu Khảo sát lấy ý kiến về phiếu rèn luyện\n5. GPA kì II đạt Xuất sắc\n6. Ngày hội HSSV các dân tộc Việt Nam\n7. Tham gia cuộc thi Rung chuông vàng: Ánh sáng soi đường - Tiếp bước ba sẵn sàng\n8. Quyên góp sách Thư viện \n9. Đánh giá giảng viên \n10. Tham gia Hội thao \"Thanh niên khỏe\" khoa Toán - Tin\n11. Tham gia cuộc thi Tìm hiểu về Đoàn Thanh niên Cộng sản Hồ Chí Minh\n12. Tham gia tọa đàm NCKH đối với sinh viên khoa Toán - Tin\n13. Kiểm tra, đánh giá kết quả học tập Nghị quyết Đại hội đại biểu Toàn quốc Hội Sinh viên Việt Nam lần thứ XI, nhiệm kỳ 2023 - 2028 (44 điểm)\n14. Cổ vũ HNUE ENLISH\n15. Kiểm tra, đánh giá việc học tập lý luận chính trị trên App Thanh niên Việt Nam\n16. Dạy học tình nguyện mùa hè xanh\n17. Hiến máu tình nguyện 2 lần " },
     "725101225": { "stt": "36", "name": "Triệu Hà Nam", "dob": "10/01/2004", "points": "", "hd": "" },
     "725101226": { "stt": "37", "name": "Trịnh Nhật Nam", "dob": "10/11/2004", "points": "84", "hd": "1. Đánh giá giảng viên\n2. Tham gia và tập luyện cùng CLB Bóng chuyền Khoa Toán - Tin" },
     "725101227": { "stt": "38", "name": "Vũ Hoài Nam", "dob": "20/03/2004", "points": "75", "hd": "1. Đánh giá giảng viên (chưa đủ thông tin)" },
-    "725101228": { "stt": "39", "name": "Đặng Thị Nga", "dob": "19/03/2004", "points": "100", "hd": "1. Tham gia sự kiện \"Xuân an lành\" khoa Toán tin\n2. Ngày hội dân tộc\n3. GPA kì II đạt Xuất sắc\n4. Tham gia cô vũ HNUE English Challenge\n5. GCN giải nhì cuộc thi thiết kế áo \"Ecovision: Design for future\" khoa Toán tin\n6. GCN tham gia cuộc thi Rung chuông vàng KTX\n7. GCN tham gia sự kiện \"Đổi giấy lấy cây\" (Đội vì Môi trường)\n8. Tham gia Hội thao \"Thanh niên khỏe\" khoa Toán - Tin\n9. Đánh giá giảng viên \n10. Quyên góp sách Thư viện \n11. Ban tổ chức chương trình hiến máu Toàn trường \"Sắc vàng Hoàng Yến\"\n12. GCN tham gia hỗ trợ chương trình \" Tết học sinh, sinh viên KTX\"\n13. Thành viên CLB Thanh niên vận động hiến máu Trường ĐHSP Hà Nội (Hoạt động rất tích cực)\n14. Thành viên Đội Sinh viên tình nguyện KTX Trường ĐHSP Hà Nội\n15. GCN Kiểm tra, đánh giá kết quả học tập Nghị quyết Đại hội đại biểu Toàn quốc Hội Sinh viên Việt Nam lần thứ XII, nhiệm kỳ 2023 - 2028\n16. GCN TNV Tiếp sức mùa thi " },
+    "725101228": { "stt": "39", "name": "Đặng Thị Nga", "dob": "19/03/2004", "points": "95", "hd": "1. Tham gia sự kiện \"Xuân an lành\" khoa Toán tin\n2. Ngày hội dân tộc\n3. GPA kì II đạt Xuất sắc\n4. Tham gia cô vũ HNUE English Challenge\n5. GCN giải nhì cuộc thi thiết kế áo \"Ecovision: Design for future\" khoa Toán tin\n6. GCN tham gia cuộc thi Rung chuông vàng KTX\n7. GCN tham gia sự kiện \"Đổi giấy lấy cây\" (Đội vì Môi trường)\n8. Tham gia Hội thao \"Thanh niên khỏe\" khoa Toán - Tin\n9. Đánh giá giảng viên \n10. Quyên góp sách Thư viện \n11. Ban tổ chức chương trình hiến máu Toàn trường \"Sắc vàng Hoàng Yến\"\n12. GCN tham gia hỗ trợ chương trình \" Tết học sinh, sinh viên KTX\"\n13. Thành viên CLB Thanh niên vận động hiến máu Trường ĐHSP Hà Nội (Hoạt động rất tích cực)\n14. Thành viên Đội Sinh viên tình nguyện KTX Trường ĐHSP Hà Nội\n15. GCN Kiểm tra, đánh giá kết quả học tập Nghị quyết Đại hội đại biểu Toàn quốc Hội Sinh viên Việt Nam lần thứ XII, nhiệm kỳ 2023 - 2028\n16. GCN TNV Tiếp sức mùa thi " },
     "725101229": { "stt": "40", "name": "Nguyễn Thị Nga", "dob": "07/09/2004", "points": "85", "hd": "1. Đánh giá giảng viên\n2. Tham gia Olympic Tiếng Anh \n3. GPA kì II đạt Xuất sắc" },
     "725101230": { "stt": "41", "name": "Nguyễn Thị Nga", "dob": "28/02/2003", "points": "84.5", "hd": "1. Đánh giá giảng viên\n2. GPA kì II đạt Xuất sắc" },
     "725101232": { "stt": "42", "name": "Nguyễn Thị Thúy Nga", "dob": "22/07/2003", "points": "84.5", "hd": "1. Đánh giá giảng viên\n2. GPA kì II đạt Xuất sắc" },
@@ -70,9 +70,18 @@ function lookupStudent() {
     document.getElementById('studentDOB').innerText = student.dob;
     document.getElementById('studentPoints').innerText = student.points;
     document.getElementById('activities').innerText = student.hd;
-    if (document.getElementById('activities').innerText === '') {
+
+    const diemInputs = document.querySelectorAll('.diem-input');
+    if (document.getElementById('studentName').innerText === '') {
         check_acts.textContent = '';
+        diemInputs.forEach(function(input) {
+            input.disabled = true;
+            input.value = '';
+        });
     } else {
         check_acts.textContent = 'Bạn vui lòng kiểm tra lại các hoạt động rèn luyện của mình trước khi lưu thông tin:';
+        diemInputs.forEach(function(input) {
+            input.disabled = false;
+        });
     }
 }

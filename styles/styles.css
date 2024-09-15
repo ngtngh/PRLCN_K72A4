@@ -162,6 +162,10 @@ div.sticky-bottom {
 #IIa5, #IIa6 {
     background-color: #eee;
 }
+.diem-input:disabled, #IIa5:disabled, #IIa6:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
 
 div.submit-container {
     display: flex;
