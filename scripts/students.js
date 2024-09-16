@@ -26,7 +26,7 @@ const students = {
     "725101209": { "stt": "22", "name": "Nguyễn Tiến Mạnh", "dob": "04/07/2004", "points": "81.5", "hd": "1. Đánh giá giảng viên (chỉ môn chuyên ngành)\n2. Kiểm tra, đánh giá việc học tập lý luận chính trị trên App Thanh niên Việt Nam" },
     "725101210": { "stt": "23", "name": "Nguyễn Xuân Mạnh", "dob": "23/02/2004", "points": "83", "hd": "1. Đánh giá giảng viên" },
     "725101211": { "stt": "24", "name": "Trần Dương Mạnh", "dob": "31/08/2004", "points": "83.5", "hd": "1. Đánh giá giảng viên\n2. Kiểm tra, đánh giá việc học tập lý luận chính trị trên App Thanh niên Việt Nam" },
-    "725101212": { "stt": "25", "name": "Ngân Sắc Mây", "dob": "26/12/2004", "points": "83", "hd": "1. Đánh giá giảng viên" },
+    "725101212": { "stt": "25", "name": "Ngân Sắc Mây", "dob": "26/12/2004", "points": "64", "hd": "1. Đánh giá giảng viên" },
     "725101213": { "stt": "26", "name": "Bùi Thị Minh", "dob": "10/02/2004", "points": "85.5", "hd": "1. Đánh giá giảng viên\n2. Kiểm tra, đánh giá việc học tập lý luận chính trị trên App Thanh niên Việt Nam\n3. Hiến máu (ngày 20/2/2024)" },
     "725101214": { "stt": "27", "name": "Lại Vũ Minh", "dob": "28/09/2004", "points": "83.5", "hd": "1. Đánh giá giảng viên\n2. Kiểm tra, đánh giá việc học tập lý luận chính trị trên App Thanh niên Việt Nam" },
     "725101215": { "stt": "28", "name": "Nghiêm Nguyệt Minh", "dob": "05/03/2004", "points": "85", "hd": "1. Đánh giá giảng viên\n2. Hiến máu (ngày 28/05/2024)" },
